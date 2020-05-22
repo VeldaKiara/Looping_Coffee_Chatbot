@@ -8,7 +8,8 @@ def coffee_bot():
     drink_type = get_drink_type()
     drink = '{} {}'.format(size, drink_type)
     print('Alright, that\'s a {}!'.format(drink))
-  
+    while True: 
+      order_drink = input("Would you like to order another drink? (y/n) \n>")
   name = input('Can I get your name please? \n> ')
   print('Thanks, {}! Your order will be ready shortly.'.format(name))
 
