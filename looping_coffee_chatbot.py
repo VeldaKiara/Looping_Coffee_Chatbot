@@ -2,12 +2,12 @@ from utils import print_message, get_size, order_latte
 
 def coffee_bot():
   print('Welcome to the cafe!')
-
-  size = get_size()  
-  drink_type = get_drink_type()
-
-  drink = '{} {}'.format(size, drink_type)
-  print('Alright, that\'s a {}!'.format(drink))
+  order_drink = 'y'
+  while order_drink == 'y':
+    size = get_size()  
+    drink_type = get_drink_type()
+    drink = '{} {}'.format(size, drink_type)
+    print('Alright, that\'s a {}!'.format(drink))
   
   name = input('Can I get your name please? \n> ')
   print('Thanks, {}! Your order will be ready shortly.'.format(name))
