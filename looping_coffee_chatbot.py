@@ -4,7 +4,7 @@ def coffee_bot():
   print('Welcome to the cafe!')
   order_drink = 'y'
   drinks = []
-  name = input('Can I get your name please? \n> ')
+  name = input('Can I get your name please? \n ')
   while order_drink == 'y':
     size = get_size()  
     drink_type = get_drink_type()
@@ -12,7 +12,7 @@ def coffee_bot():
     print('Alright, that\'s a {}!'.format(drink))
     drinks.append(drink)
     while True: 
-      order_drink = input("Would you like to order another drink? (y/n) \n>")
+      order_drink = input("Would you like to order another drink? (y/n) \n")
       #name = input('Can I get your name please? \n> ')
       if order_drink in ['y', 'n']:
         break
@@ -24,7 +24,7 @@ def coffee_bot():
   
 
 def get_drink_type():
-  res = input('What type of drink would you like? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n> ')
+  res = input('What type of drink would you like? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n [d] Cappuccino \n ')
 
   if res == 'a':
     return 'brewed coffee'
