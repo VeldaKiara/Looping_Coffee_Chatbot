@@ -18,7 +18,7 @@ def get_drink_type():
   if res == 'a':
     return 'brewed coffee'
   elif res == 'b':
-    return 'mocha'
+    return order_mocha()
   elif res == 'c':
     return order_latte()
   else:
@@ -36,4 +36,3 @@ def order_mocha():
             print_message()
 
 coffee_bot()
-order_mocha()
