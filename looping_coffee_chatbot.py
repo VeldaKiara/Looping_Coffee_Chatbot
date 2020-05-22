@@ -24,7 +24,7 @@ def coffee_bot():
   
 
 def get_drink_type():
-  res = input('What type of drink would you like? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n [d] Cappuccino \n ')
+  res = input('What type of drink would you like? \n[a] Brewed Coffee \n[b] Mocha \n[c] Latte \n[d] Cappuccino \n> ')
 
   if res == 'a':
     return 'brewed coffee'
@@ -32,6 +32,8 @@ def get_drink_type():
     return order_mocha()
   elif res == 'c':
     return order_latte()
+  elif res == 'd':
+    return 'cappuccino'
   else:
     print_message()
     return get_drink_type()
