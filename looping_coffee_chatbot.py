@@ -28,6 +28,9 @@ def get_drink_type():
 def order_mocha():
     while True:
         res =input("Would you like to try our limited-edition peppermint mocha? [a] Sure![b] Maybe next time!")
-
+        if res == 'a':
+            return 'peppermint mocha'
+        elif res == 'b':
+            return 'mocha'
 
 coffee_bot()
